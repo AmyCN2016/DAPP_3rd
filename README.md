@@ -1,4 +1,8 @@
-# Decentralized Star Notary Service - Starter Code
+# Truffle version and OpenZeppelin version
+Truffle : 5.0.3
+Openzeppelin : 2.1.2
+
+# DAPP of Star Notary
 Token Name: "Amy's Star Notary"
 Token Symbol: "ASN"
 
