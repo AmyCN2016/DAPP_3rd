@@ -49,8 +49,8 @@ contract StarNotary is ERC721 {
 
         _transferFrom(starOwner,msg.sender, _tokenId);
         
-        address payable owner = address(uint160(ownerOf(_tokenId)));
-        owner.call.value(starCost).gas(0);
+        address payable owner = address(uint256(starOwner));
+        owner.transfer(starCost);
         //owner.transfer(starCost).gasAmount(0)();
 
         if(msg.value > starCost) {
